@@ -4,5 +4,5 @@
   "host": "localhost",
   "username": "docker",
   "password": "ignite",
-  "database": "rentalx"
+  "database": "rentalx_db"
 }
