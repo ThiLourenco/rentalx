@@ -20,7 +20,7 @@ interface IResponse {
 @injectable()
 class AuthenticateUserUseCase {
   constructor(
-    @inject("UsersRepository")
+    @inject("UserRepository")
     private usersRepository: IUsersRepository
   ) {}
 
