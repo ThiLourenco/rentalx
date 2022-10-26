@@ -38,7 +38,7 @@ class AuthenticateUserUseCase {
       throw new Error("Email or password incorrect !");
     }
 
-    // create jsonwebton
+    // create jsonwebtoken
     const token = sign({}, "8c23d7b8d3c00ddb40961c856822aef8", {
       subject: user.id,
       expiresIn: "1d",
