@@ -1,8 +1,15 @@
-import { Column, CreateDateColumn, JoinColumn, ManyToOne } from "typeorm";
+import {
+  Column,
+  CreateDateColumn,
+  Entity,
+  JoinColumn,
+  ManyToOne,
+} from "typeorm";
 import { v4 as uuidV4 } from "uuid";
 
 import { Category } from "./Category";
 
+@Entity("cars")
 class Car {
   id: string;
 
