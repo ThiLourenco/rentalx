@@ -59,7 +59,7 @@ Não deve ser possível cadastrar um novo aluguel, caso já exista um aberto par
 O usuário deve estar logado na aplicação.
 Ao realizar um aluguel, o status do carro deverá ser alterado para indisponível.
 
-# Devolução carro de carro
+# Devolução de carro
 
 **RF**
 Deve ser possível realizar a devolução de um carro.
