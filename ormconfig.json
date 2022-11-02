@@ -6,9 +6,9 @@
   "password": "ignite",
   "database": "rentalx_db",
   "synchronize": false,
-  "migrations": ["./src/database/migrations/*.ts"],
-  "entities": ["./src/modules/**/entities/*.ts"],
+  "migrations": ["./src/shared/infra/typeorm/migrations/*.ts"],
+  "entities": ["./src/modules/**/infra/entities/*.ts"],
   "cli": {
-    "migrationsDir": "./src/database/migrations"
+    "migrationsDir": "./src/shared/infra/typeorm/migrations"
   }
 }
