@@ -28,7 +28,7 @@ class CreateCarUseCase {
     brand,
     category_id,
   }): Promise<void> {
-    this.CarsRepository.create({
+    await this.CarsRepository.create({
       name,
       description,
       daily_rate,
