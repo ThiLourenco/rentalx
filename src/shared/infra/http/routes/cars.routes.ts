@@ -4,8 +4,8 @@ import { CreateCarController } from "@modules/cars/useCases/createCar/CreateCarC
 
 const carsRoutes = Router();
 
-const createCarController = new CreateCarController();
+const createCar = new CreateCarController();
 
-carsRoutes.post("/", createCarController.handle);
+carsRoutes.post("/", createCar.handle);
 
 export { carsRoutes };
