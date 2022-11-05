@@ -18,10 +18,10 @@
 # Listagem de carros
 
 **RF**
-Deve ser possível listar todos os carros disponíveis.
-Deve ser possível listar todos os carros disponíveis pela nome da categoria.
-Deve ser possível listar todos os carros disponíveis pela nome da marca.
-Deve ser possível listar todos os carros disponíveis pela nome do carro.
+- [x] Deve ser possível listar todos os carros disponíveis.
+- [] Deve ser possível listar todos os carros disponíveis pela nome da categoria.
+- [x] Deve ser possível listar todos os carros disponíveis pela nome da marca.
+- [] Deve ser possível listar todos os carros disponíveis pela nome do carro.
 
 **RN**
 O usuário não precisa estar logado no sistema.
