@@ -65,5 +65,7 @@ export class CreateSpecificationsCars1667655506603
       "specifications_cars",
       "FKSpecificationCar"
     );
+
+    await queryRunner.dropTable("specifications_cars");
   }
 }
