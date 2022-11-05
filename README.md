@@ -24,7 +24,7 @@
 - [x] Deve ser possível listar todos os carros disponíveis pela nome do carro.
 
 **RN**
-O usuário não precisa estar logado no sistema.
+- [x] O usuário não precisa estar logado no sistema.
 
 # Cadastro de Especificação no carro
 
