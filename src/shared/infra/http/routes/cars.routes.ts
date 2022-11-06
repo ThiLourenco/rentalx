@@ -30,7 +30,7 @@ carsRoutes.post(
 );
 
 carsRoutes.post(
-  "/images",
+  "/images/:id",
   ensureAuthenticated,
   ensureAdmin,
   upload.array("images"),
