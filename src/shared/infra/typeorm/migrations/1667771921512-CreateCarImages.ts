@@ -7,12 +7,17 @@ export class CreateCarImages1667771921512 implements MigrationInterface {
         name: "cars_images",
         columns: [
           {
+            name: "id",
+            type: "uuid",
+            isPrimary: true,
+          },
+          {
             name: "car_id",
             type: "uuid",
             isPrimary: true,
           },
           {
-            name: "image_name",
+            name: "images_name",
             type: "varchar",
           },
           {
