@@ -39,15 +39,15 @@
 # Cadastro de imagens do carro
 
 **RF**
-- [ ] Deve ser possível cadastrar a imagem do carro.
+- [x] Deve ser possível cadastrar a imagem do carro.
 
 **RNF**
-- [ ] Utilizar o multer para upload dos arquivos.
+- [x] Utilizar o multer para upload dos arquivos.
 
 **RN**
-- [] O usuário deve poder cadastrar mais de uma imagem para o mesmo carro.
+- [x] O usuário deve poder cadastrar mais de uma imagem para o mesmo carro.
 
-- [ ] O usuário responsável pelo cadastro, deve ser um usuário administrador.
+- [x] O usuário responsável pelo cadastro, deve ser um usuário administrador.
 
 # Aluguel de carro
 
