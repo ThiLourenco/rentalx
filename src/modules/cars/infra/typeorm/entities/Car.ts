@@ -25,7 +25,7 @@ class Car {
   description: string;
 
   @Column()
-  daily_rate: string;
+  daily_rate: number;
 
   @Column()
   available: boolean;

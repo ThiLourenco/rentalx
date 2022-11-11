@@ -34,7 +34,7 @@ describe("Create Car Specification", () => {
     const car = await carsRepositoryInMemory.create({
       name: "Name Car",
       description: "Description Car",
-      daily_rate: "100",
+      daily_rate: 100,
       license_plate: "ABC_1234",
       fine_amount: 60,
       brand: "Brand",
