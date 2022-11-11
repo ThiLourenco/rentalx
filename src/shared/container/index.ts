@@ -1,5 +1,7 @@
 import { container } from "tsyringe";
 
+import "@shared/container/providers";
+
 import { UsersRepository } from "@modules/accounts/infra/repositories/UsersRepository";
 import { IUsersRepository } from "@modules/accounts/repositories/IUsersRepository";
 import { CarsRepository } from "@modules/cars/infra/typeorm/repositories/CarRepository";
