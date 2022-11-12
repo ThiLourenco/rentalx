@@ -43,7 +43,7 @@ describe("List Category Controller", () => {
 
   it("Should be able to list all categories", async () => {
     const responseToken = await request(app).post("/sessions").send({
-      email: "admin@retalx.com.br",
+      email: "admin@rentalx.com.br",
       password: "admin",
     });
 
@@ -61,9 +61,7 @@ describe("List Category Controller", () => {
 
     const response = await request(app).get("/categories");
 
-    console.log(response.body);
-
-    expect(response.status).toBe(201);
+    expect(response.status).toBe(200);
     expect(response.body.length).toBe(1);
     expect(response.body[0]).toHaveProperty("id");
   });

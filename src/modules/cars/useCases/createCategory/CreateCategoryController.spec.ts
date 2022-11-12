@@ -9,15 +9,14 @@ import createConnection from "@shared/infra/typeorm";
 let connection: Connection;
 describe("Create Category Controller", () => {
   beforeAll(async () => {
-    if (!connection) {
-      connection = await createConnection();
-      await connection.runMigrations();
+    connection = await createConnection();
+    await connection.runMigrations();
 
-      const id = uuidV4();
-      const password = await hash("admin", 8);
+    const id = uuidV4();
+    const password = await hash("admin", 8);
 
-      await connection.query(
-        `INSERT INTO USERS(
+    await connection.query(
+      `INSERT INTO USERS(
         id, 
         name, 
         email, 
@@ -34,20 +33,17 @@ describe("Create Category Controller", () => {
         'now()', 
         'LSJ0023' )
       `
-      );
-    }
+    );
   });
 
   afterAll(async () => {
-    if (connection) {
-      await connection.dropDatabase();
-      await connection.close();
-    }
+    await connection.dropDatabase();
+    await connection.close();
   });
 
   it("Should be able to create a new category", async () => {
     const responseToken = await request(app).post("/sessions").send({
-      email: "admin@retalx.com.br",
+      email: "admin@rentalx.com.br",
       password: "admin",
     });
 
@@ -62,12 +58,12 @@ describe("Create Category Controller", () => {
       .set({
         Authorization: `Bearer ${token}`,
       });
-    expect(response.status).toBe(201);
+    expect(response.status).toBe(200);
   });
 
   it("Should not be able to create a new category with name exists", async () => {
     const responseToken = await request(app).post("/sessions").send({
-      email: "admin@retalx.com.br",
+      email: "admin@rentalx.com.br",
       password: "admin",
     });
 

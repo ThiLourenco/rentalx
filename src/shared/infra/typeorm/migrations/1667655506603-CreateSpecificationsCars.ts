@@ -33,7 +33,7 @@ export class CreateSpecificationsCars1667655506603
     );
 
     await queryRunner.createForeignKey(
-      "specification_cars",
+      "specifications_cars",
       new TableForeignKey({
         name: "FKSpecificationCar",
         referencedTableName: "specifications",
@@ -45,7 +45,7 @@ export class CreateSpecificationsCars1667655506603
     );
 
     await queryRunner.createForeignKey(
-      "specification_cars",
+      "specifications_cars",
       new TableForeignKey({
         name: "FKCarSpecification",
         referencedTableName: "cars",
