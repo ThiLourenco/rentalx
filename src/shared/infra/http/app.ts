@@ -9,7 +9,7 @@ import { AppError } from "@shared/errors/AppError";
 import { router } from "@shared/infra/http/routes";
 import createConnection from "@shared/infra/typeorm";
 
-import swaggerFile from "./swagger.json";
+import swaggerFile from "../../../swagger.json";
 
 createConnection();
 const app = express();
@@ -34,8 +34,4 @@ app.use(
   }
 );
 
-const PORT = 3333;
-
-app.listen(PORT, () => {
-  console.log(`Server Running at ${PORT} 🔥 🔥 !`);
-});
+export { app };
