@@ -3,5 +3,11 @@ import request from "supertest";
 import { app } from "@shared/infra/http/app";
 
 describe("Create Category Controller", async () => {
-  await request(app).get("/cars/available").expect(201);
+  it("Should be able to create a new category", async () => {
+    const response = await request(app).post("/categories").send({
+      name: "Category Supertest",
+      description: "Category Supertest",
+    });
+    expect(response.statusCode).toBe(201);
+  });
 });
