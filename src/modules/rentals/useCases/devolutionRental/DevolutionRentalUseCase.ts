@@ -33,18 +33,15 @@ class DevolutionRentalUseCase {
 
     const dateNow = this.dateProvider.dateNow();
 
-    // verificação da diaria - qts diarias o aluguel tem
     let daily = this.dateProvider.compareInDays(
       rental.start_date,
       this.dateProvider.dateNow()
     );
 
-    // se for uma diaria menor ou igual a zero será atribuído o valor 1 que é o mínimo 1dia ou 24hrs
     if (daily <= 0) {
       daily = minimum_daily;
     }
 
-    // calculando a qtd de atraso
     const delay = this.dateProvider.compareInDays(
       dateNow,
       rental.expected_return_date
@@ -57,11 +54,8 @@ class DevolutionRentalUseCase {
       total = calculate_fine;
     }
 
-    // pegando o valor de total já calculado e somando com daily * daily_rate
-    // que é o valor da diaria * o valor total da diaria
     total += daily * car.daily_rate;
 
-    // atualiza todos os valores necessários
     rental.end_date = this.dateProvider.dateNow();
     rental.total = total;
 
