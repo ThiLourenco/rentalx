@@ -83,10 +83,10 @@
 # Listagem de alugueis para o usuário
 
 **RF**
-- [ ] Deve ser possível realizar a busca de todos os alugueis para o usuário.
+- [x] Deve ser possível realizar a busca de todos os alugueis para o usuário.
 
 **RN**
-- [ ] O usuário deve estar logado na aplicação.
+- [x] O usuário deve estar logado na aplicação.
 
 # Recuperar senha
 
