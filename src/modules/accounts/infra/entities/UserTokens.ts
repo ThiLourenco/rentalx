@@ -6,11 +6,12 @@ import {
   ManyToOne,
   PrimaryColumn,
 } from "typeorm";
+import { v4 as uuidV4 } from "uuid";
 
 import { User } from "./User";
 
 @Entity("users_tokens")
-class UsersTokens {
+class UserTokens {
   @PrimaryColumn()
   id: string;
 
@@ -29,6 +30,12 @@ class UsersTokens {
 
   @CreateDateColumn()
   created_at: Date;
+
+  constructor() {
+    if (!this.id) {
+      this.id = uuidV4();
+    }
+  }
 }
 
-export { UsersTokens };
+export { UserTokens };
