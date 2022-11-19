@@ -10,7 +10,7 @@ import { AppError } from "@shared/errors/AppError";
 @injectable()
 class SendForgotPasswordMailUseCase {
   constructor(
-    @inject("UsersRepository")
+    @inject("UserRepository")
     private usersRepository: IUsersRepository,
     @inject("UsersTokensRepository")
     private usersTokensRepository: IUsersTokensRepository,
