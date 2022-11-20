@@ -31,7 +31,7 @@ class SESMailProvider implements IMailProvider {
 
     const templateHTML = templateParse(variables);
 
-    const message = await this.client.sendMail({
+    await this.client.sendMail({
       to, // valide email aws
       from: "Rentalx <noreplay@rentalx.com.br>",
       subject,
