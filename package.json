@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/ThiLourenco/rentalx#readme",
   "dependencies": {
+    "aws-sdk": "^2.1258.0",
     "bcrypt": "^5.1.0",
     "csv-parse": "^5.3.0",
     "dayjs": "^1.11.6",
