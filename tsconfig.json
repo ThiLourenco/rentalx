@@ -6,6 +6,7 @@
     "module": "commonjs",
     "moduleResolution": "node",
     "baseUrl": "./src",
+    "outDir": "./dist",
     "paths": {
       "@modules/*": ["modules/*"],
       "@config/*": ["config/*"],

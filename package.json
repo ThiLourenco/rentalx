@@ -4,6 +4,7 @@
   "description": "Ignite - API Rentalx",
   "main": "index.js",
   "scripts": {
+    "build": "tsc",
     "dev": "ts-node-dev -r tsconfig-paths/register --inspect --transpile-only --ignore-watch node_modules --respawn --poll src/shared/infra/http/server.ts",
     "typeorm": "ts-node-dev -r tsconfig-paths/register ./node_modules/typeorm/cli",
     "test": "NODE_ENV=test jest --runInBand --detectOpenHandles",
